@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/smalllogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <!-- logo section -->
+            <div class="logo-section">
+                <div class="logo">                <img src="./images/ClipartKey_1478728.png" alt=""></div>
+                <div class="in-text">
+                    <span>.in</span>
+                </div>
+            </div>
+
+            <!-- deliver section  -->
+            <div class="delivery-section">
+              <span style="color: #A8AAAB;font-size: 13px;margin-left: 10px;">Deliver to Dinesh</span>  
+              <span style="color: #EBEBEC;font-size: 16px;"><i class="fa fa-map-marker-alt"></i> Bengaluru 560076</span>  
+            </div>
+
+            <!-- serch section -->
+            <div class="serch-setion">
+                <form action="">
+                    <select id="searchDropdownBox" name="url" >
+                        <option selected="selected" value="aps">All </option>
+                        <option value="todays-deals">Deals</option>
+                        <option value="alexa-skills">Alexa Skills</option>
+                        <option value="amazon-devices">Amazon Devices</option>
+                        <option value="fashion">Amazon Fashion</option>
+                        <option value="pantry">Amazon Pantry</option>
+                        <option value="appliances">Appliances</option>
+                        <option value="mobile-apps">Apps &amp; Games</option>
+                        <option value="baby">Baby</option>
+                        <option value="beauty">Beauty</option>
+                        <option value="stripbooks">Books</option>
+                        <option value="automotive">Car &amp; Motorbike</option>
+                        <option value="apparel">Clothing &amp; Accessories</option>
+                        <option value="collectibles">Collectibles</option>
+                        <option value="computers">Computers &amp; Accessories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="lawngarden">Garden &amp; Outdoors</option>
+                        <option value="gift-cards">Gift Cards</option>
+                        <option value="grocery">Grocery &amp; Gourmet Foods</option>
+                        <option value="hpc">Health &amp; Personal Care</option>
+                        <option value="kitchen">Home &amp; Kitchen</option>
+                        <option value="industrial">Industrial &amp; Scientific</option>
+                        <option value="jewelry">Jewellery</option>
+                        <option value="digital-text">Kindle Store</option>
+                        <option value="luggage">Luggage &amp; Bags</option>
+                        <option value="luxury-beauty">Luxury Beauty</option>
+                        <option value="dvd">Movies &amp; TV Shows</option>
+                        <option value="popular">Music</option>
+                        <option value="mi">Musical Instruments</option>
+                        <option value="office-products">Office Products</option>
+                        <option value="pets">Pet Supplies</option>
+                        <option value="instant-video">Prime Video</option>
+                        <option value="shoes">Shoes &amp; Handbags</option>
+                        <option value="software">Software</option>
+                        <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+                        <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+                        <option value="home-improvement">Tools &amp; Home Improvement</option>
+                        <option value="toys">Toys &amp; Games</option>
+                        <option value="under-ten-dollars">Under ₹500</option>
+                        <option value="videogames">Video Games</option>
+                        <option value="watches">Watches</option>
+                    </select>
+                    <input type="search" name="search" id="search">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- country section -->
+            <div class="country-section">
+                <img src="./images/india-flag-icon-64.png" alt="" width="30" height="18px">
+                <i class="fas fa-caret-down" style="color: #A8AAAB;"></i>
+            </div>
+            <div class="country-section-toggle">
+                <form action="">
+                    <input type="radio" name="lang" id="EN" value="EN"> <label for="EN">English - EN</label><hr>
+                    <input type="radio" name="lang" id="HI" value="HI"> <label for="HI">हिंदी - HI</label><br>
+                    <input type="radio" name="lang" id="TA" value="TA"> <label for="TA">தமிழ் - TA</label><br>
+                    <input type="radio" name="lang" id="TE" value="TE"> <label for="TE">తెలుగు - TE</label><br>
+                    <input type="radio" name="lang" id="KN" value="KN"> <label for="KN">ಕನ್ನಡ - KN</label><br>
+                    <input type="radio" name="lang" id="ML" value="ML"> <label for="ML">മലയാളം - ML</label>
+                </form>
+                <hr>
+                <img src="./images/india-flag-icon-64.png" alt="" width="30px" style="margin: 2px;">
+                <span style="font-size: 15px;">You are shopping on Amazon.in.</span>
+                <p style="text-align: center;"><a href="#" style="color: blue;text-decoration: none;text-align: center;">change country/Region</a></p>
+            </div>
+
+            <!-- account section -->
+            <div class="account-section">
+                <span style="color: #EBEBEC;font-size: 13px;display:block;">Hello, Dinesh</span>  
+                <span style="color: #EBEBEC;font-size: 14px;font-weight:800;display: block">Account &amp; Lists <i class="fas fa-caret-down" style="color: #A8AAAB;"></i></span>
+            </div>
+            <div class="account-section-toggle">
+                <div class="accdata">
+
+                    <div class="your-list aaa">
+                        <h3>Your Lists</h3>
+                        <ul>
+                            <li><a href="#">Shopping List</a></li>
+                            <li><a href="#">Shopping List 1</a></li><br>
+                            <hr><br>
+                            <li><a href="#">Create a Wish List</a></li>
+                            <li><a href="#">Find a Wish List</a></li>
+                            <li><a href="#">Wish from Any Website</a></li>
+                            <li><a href="#">Baby Wish List</a></li>
+                            <li><a href="#">Discover Your Style</a></li>
+                            <li><a href="#">Explore Showroom</a></li>
+                        </ul>
+                    </div>
+                    <div class="your-account aaa">
+                        <h3>Your Account</h3>
+                        <ul>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Your Wish List</a></li>
+                            <li><a href="#">Your Recommendations</a></li>
+                            <li><a href="#">Your Prime Membership</a></li>
+                            <li><a href="#">Your Prime Video</a></li>
+                            <li><a href="#">Your Subscribe & Save Items</a></li>
+                            <li><a href="#">Memberships & Subscriptions</a></li>
+                            <li><a href="#">Your Amazon Business Account</a></li>
+                            <li><a href="#">Your Seller Account</a></li>
+                            <li><a href="#">Manage Your Content and Devices</a></li>
+                            <li><a href="#">Switch Accounts</a></li>
+                            <li><a href="./login/login.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- order section -->
+            <div class="order-section">
+                <span style="color: #EBEBEC;font-size: 13px;display:block;">Returns</span>  
+                <span style="color: #EBEBEC;font-size: 14px;font-weight:800;display: block">&amp; Orders</span>
+            </div>
+
+            <!-- cart section  -->
+            <div class="cart-section">
+  
+                <span style="color: #EBEBEC;font-size: 30px;font-weight:800;"><i class="fas fa-shopping-cart"></i></span>
+                <span style="color: #EBEBEC;font-size: 15px;font-weight:800;">Cart</span>
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav-list">
+                <ul>
+                    <li class="side-nav-open"><a href="#"><i class="fa fa-bars" style="font-size: 20px;"></i> All</a></li>
+                    <li><a href="#">Dinesh's Amazon.in</a></li>
+                    <li><a href="#">Amazon Pay</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Mobiles</a></li>
+                    <li><a href="#">Today Deals</a></li>
+                    <li><a href="#">Prime</i></a></li>
+                    <li><a href="#">Buy Again</a></li>
+                    <li><a href="#">Coustomer Service</a></li>
+                    <li><a href="#">Pantry</a></li>
+                </ul>
+            </div>
+            <div class="dnld-section">
+                <img src="./images/SWM_DownloadApp._CB410314483_.jpg" alt="" width="100%">
+            </div>
+        </nav>
+
+       <div class="slider">
+            <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Composer -->
+    <!-- Source: https://www.jssor.com/demos/banner-slider.slider/=edit -->
+    <script src="./images/slider/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Orientation: 2,
+                $NoDrag: true
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1700;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .jssora061 {display:block;position:absolute;cursor:pointer;}
+        .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+        .jssora061:hover {opacity:.8;}
+        .jssora061.jssora061dn {opacity:.5;}
+        .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1100px;height:200x;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="./images/slider/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1100px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="./images/slider/slider1.jpg"/>
+                <div u="thumb">Slide Description 001
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="./images/slider/slider2.jpg" />
+                <div u="thumb">Slide Description 002
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="./images/slider/slider3.jpg" />
+                <div u="thumb">Slide Description 003
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="./images/slider/slider4.jpg" />
+                <div u="thumb">Slide Description 004
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="./images/slider/slider5.jpg" />
+                <div u="thumb">Slide Description 005
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="./images/slider/slider6.jpg" />
+                <div u="thumb">Slide Description 006
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="./images/slider/slider7.jpg" />
+                <div u="thumb">Slide Description 007
+                </div>
+            </div>
+
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">image gallery</a>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora061" style="width:60px;height:60px;top:0px;left:25px;filter:drop-shadow(-5px -1px 0px #000);" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:relative;top:-100px;left:0;width:100%;height:100%;">
+                <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora061" style="width:60px;height:60px;top:0px;right:25px;filter:drop-shadow(5px 1px 0px #000)" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:relative;top:-100px;left:0;width:100%;height:100%;">
+                <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+       </div>
+
+       <div class="main1">
+            <div id="block1"></div>
+            <div id="block2"></div>
+            <div id="block3"></div>
+            <div id="block4"></div>
+            <div id="block5"></div>
+            <div id="block6"></div>
+            <div id="block7"></div>
+            <div id="block8"></div>
+            <div id="block9"></div>
+            <div id="block10"></div>
+            <div id="block11"></div>
+            <div id="block12"></div>
+            <div id="block13"></div>
+            <div id="block14"></div>
+            <div id="block15"></div>
+            <div id="block16"></div>
+            <div id="block17"></div>
+            <div id="block18"></div>
+
+            
+        </div>
+    </div>
+    <div class="side-nav">
+        <div class="close"><span><i class="fa fa-times" style="font-size: 30px;"></i></span></i></div>
+        <div class="navdata">
+            <div class="user">
+                <h2><i class="fa fa-user-circle"> Hello,Dinesh</i></h2>
+            </div>
+            <div class="data">
+                <div class="dataa">
+                    <h3>Trending</h3>
+                    <ul>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Movers and Shakers</a></li>
+                    </ul>
+                </div>
+                <div class="dataa">
+                    <h3> Digital Content And Devices</h3>
+                    <ul>
+                        <li><a href="#">Echo & Alexa</a></li>
+                        <li><a href="#">Fire TV</a></li>
+                        <li><a href="#">Kindle E-Readers & eBooks</a></li>
+                        <li><a href="#">Audible Audiobooks</a></li>
+                        <li><a href="#">Amazon Prime Video</a></li>
+                        <li><a href="#">Amazon Prime Music</a></li>
+                    </ul>
+                </div>
+                <div class="dataa">                    
+                    <h3> Shop By Department</h3>
+                    <ul>
+                        <li><a href="#">Mobiles, Computers</a></li>
+                        <li><a href="#">TV, Appliances, Electronics</a></li>
+                        <li><a href="#">Men's Fashion</a></li>
+                        <li><a href="#">Women's Fashion
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="dataa">
+                
+                    <h3>Programs & Features </h3>
+                    <ul>
+                        <li><a href="#">Gift Cards & Mobile Recharges</a></li>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Full Store Directory</a></li>
+
+                    </ul>
+                </div>
+                <div class="dataa">
+                    <h3>Help & Settings</h3>
+                    <ul>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="./login/login.html">Sign Out</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
