@@ -51,7 +51,7 @@ let all = document.getElementById("all");
 all.addEventListener("click", e => {
     output = ""
     products.map( (v,i) => {
-        output += `<li>${i+1} . ${v.name}--- price ${v.price}</li>`;
+        output += `<li>${i + 1} . ${v.name}--- price ${v.price}</li>`;
     })
     ul.innerHTML = output;
 })

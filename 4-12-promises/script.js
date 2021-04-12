@@ -24,7 +24,7 @@
 // });
 
 new Promise((resolve, reject) => {
-  let roomCleaned = false;
+  let roomCleaned = true;
   if (roomCleaned) {
     resolve("yes room cleaned i will go to watch IPL match");
   } else {
@@ -54,12 +54,18 @@ let interval = setInterval(() => {
   document.body.innerHTML = `<h1>${v++}</h1>`;
 }, 1000);
 
-// let stop = () => {
-//   if (v === 10) {
 
-//   }
-// };
 
-// stop();
+let accessWebsite = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("accessed website🕸️");
+  }, 1000);
+  setTimeout(() => {
+    reject("oops page is not loading ...something went wrong!!");
+  }, 10000);
+});
 
-// let accessWebsite = new prmises
+
+accessWebsite
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
