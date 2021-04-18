@@ -1,0 +1,22 @@
+[
+  {
+    "emp_id": "typ1",
+    "emp_name": "manu",
+    "emp_salary": 20000,
+    "emp_designation": "nodejsDeveloper"
+  },
+
+  {
+    "emp_id": "typ2",
+    "emp_name": "Shashi",
+    "emp_salary": 2000000,
+    "emp_designation": "HTML Developer"
+  },
+
+  {
+    "emp_id": "typ3",
+    "emp_name": "shishra",
+    "emp_salary": 20000000,
+    "emp_designation": "Java Trainer"
+  }
+]

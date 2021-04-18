@@ -1,0 +1,11 @@
+{
+  "username": "shubham",
+  "age": 21,
+  "details": null,
+  "skills": ["java", "javascript", "node.js"],
+  "test": {
+    "name": "shashi",
+    "compant": "Jspiders"
+  },
+  "isavailable": true
+}

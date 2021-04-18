@@ -64,8 +64,11 @@ let accessWebsite = new Promise((resolve, reject) => {
     reject("oops page is not loading ...something went wrong!!");
   }, 10000);
 });
-
+   
 
 accessWebsite
   .then((data) => console.log(data))
   .catch((err) => console.log(err));
+
+
+  
